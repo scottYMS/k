@@ -25,7 +25,25 @@ requirejs([
     "routes"
 ],function(app,routes){
     app.config(function($stateProvider, $urlRouterProvider, $controllerProvider, $compileProvider, $filterProvider, $provide){
-        console.log($controllerProvider.register)
+        
+        
+        
+        //html5 mode
+        
+        
+        //router setting
+        for(var key in routes){
+            if(routes.hasOwnProperty(key)){
+                $stateProvider.state(key,{
+                    resolve:routes[key].requireFiles,
+                    url:routes[key].url,
+                    templateUrl:routes[key].templateUrl
+                })
+            }
+        }
+        
+        
+        $stateProvider.otherwise("/");
     });
     
     angular.element(document).ready(function() {
