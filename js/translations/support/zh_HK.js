@@ -1,0 +1,78 @@
+define({
+	/* Support */
+	"how-to-redeem": "如何兌換?",
+	"appsdollar-faq": "appsdollar 常見問題",
+	"reward-faq": "獎賞計劃 常見問題",
+	"invite-faq": "邀請朋友 常見問題",
+	"support-term-and-condition": "條款及細則",
+	"about-us": "關於我們",
+	"contact-us": "聯繫我們",
+	"tutorial": "appsdollar 簡介",
+
+	/* Support - How to redeem */
+	"how-to-redeem-q1":"如何兌換iOS付費App？",
+	"how-to-redeem-a1":"選擇付費App 項目，點擊“加入購物車”。登入Facebook / appsdollar 賬戶，進入購物車頁面內按“結帳”完成。",
+	"how-to-redeem-q2":"如何兌換App內購買項目？",
+	"how-to-redeem-a2":"選擇App內購買項目，點擊“加入購物車” 圖示。登入Facebook / appsdollar 賬戶，進入購物車頁面內按“結帳”完成。",
+
+	/* Support - FAQ */
+	"appsdollar-faq-q1":"甚麼是appsdollar?",
+	"appsdollar-faq-a1":"appsdollar 是一個兌換熱門手機 app、App 內購買項目及實體產品的平台。用戶可透過多種方式包括中銀信用卡積分或 <span class='icon appsdollar'></span> 購買產品。<br>用戶可以透過獎賞計劃賺取 <span class='icon appsdollar'></span>，不費分文即可兌換平台上所有產品!",
+	"appsdollar-faq-q2":"為什麼我不能成功兌換?",
+	"appsdollar-faq-a2":"您的積分可能不足以兌換產品，或系統於處理程序中發生錯誤。請確保積分足夠後重試。若錯誤持續發生, 請電郵至customer@appsdollar.com與我們聯絡",
+	"appsdollar-faq-q3":"為什麼不能於appsdollar找到我喜歡的 iOS付費App?",
+	"appsdollar-faq-a3":"我們正在繼續加添最受歡迎的 iOS付費App。如果您希望於appsdollar兌換指定的 iOS付費App，請電郵至customer@appsdollar.com與我們聯絡",
+	"appsdollar-faq-q4":"為什麼我之前看到想兌換的 iOS付費App，現在會顯示為「內容不存在」?",
+	"appsdollar-faq-a4":"我們或 App Store 可能已把此付費 App下架",
+	"appsdollar-faq-q5":"如果產品缺貨，我應該怎樣做?",
+	"appsdollar-faq-a5":"如果產品缺貨，我們會盡快補貨， 請稍後再試",
+	"appsdollar-faq-q6":"交易完成後收不到兌換碼該怎麼辦?",
+	"appsdollar-faq-a6":"確認郵件已發送至您的電子郵箱。如未能收到，請將您的登入資料及兌換日期和時間電郵至 customer@appsdollar.com",
+	"appsdollar-faq-q7":"兌換碼有沒有使用期限?",
+	"appsdollar-faq-a7":"appsdollar的兌換碼有效期為 30 天。某些產品會有所不同，詳情請查閱個別產品的條款和細則",
+	"appsdollar-faq-q8":"成功交易後, 需要多久才能取得兌換碼?",
+	"appsdollar-faq-a8":"iOS付費 App 一般會於20分鐘內送出。其他產品將會於成功兌換後立即送出。如有任何問題，請電郵至customer@appsdollar.com 與我們聯絡",
+	"appsdollar-faq-q9":"iOS付費App可以在任何國家兌換嗎？",
+	"appsdollar-faq-a9":"我們只支持香港的iTunes帳戶換購iOS付費App",
+	"appsdollar-faq-q10":"我兌換物品的所需積分和真正兌換時有差異。為什麼呢？",
+	"appsdollar-faq-a10":"兌換物品的所需積分可能已更新或優惠剛結束，最終所需積分會以積分系统顯示的為凖。",
+	"appsdollar-faq-q11":"appsdollar何時會關機進行維護?",
+	"appsdollar-faq-a11":"appsdollar的維護時間為:  每天 2:30am – 5:30am",
+
+	/* Support - Rewards Program FQA */
+	"reward-faq-q1": "什麼是<span class='icon appsdollar'></span>?",
+	"reward-faq-a1": "<span class='icon appsdollar'></span>是本平台的專屬貨幣，用戶可以憑<span class='icon appsdollar'></span>或以<span class='icon appsdollar'></span>配合PayPal支付去兌換熱門手機app、App 內購買項目及實體產品",
+	"reward-faq-q2": "什麼是<span class='icon appsdollar'></span>獎賞?",
+	"reward-faq-a2": "透過<span class='icon appsdollar'></span>獎賞，用戶可以於完成指定的簡單任務(例如下載一個免費手機程式) 後賺取<span class='icon appsdollar'></span>。大部分任務只需幾個步驟即可輕鬆完成。",
+	"reward-faq-q3": "賺取<span class='icon appsdollar'></span>需要付費嗎?",
+	"reward-faq-a3": "不需要。用戶不費分文即可賺取<span class='icon appsdollar'></span>",
+	"reward-faq-q4": "我沒有足夠的<span class='icon appsdollar'></span>去兌換產品，怎麼辦?",
+	"reward-faq-a4": "如果用戶的<span class='icon appsdollar'></span>結餘不足以兌換所換所選項目，可以憑PayPal支付餘額",
+	"reward-faq-q5": "完成任務後，為什麼沒有獲得<span class='icon appsdollar'></span>獎賞?",
+	"reward-faq-a5": "<span class='icon appsdollar'></span>獎賞一般會於24小時後直接添加至賬戶內。如果用戶未能獲得有關獎賞，請確保進行指定任務時，你已經:<br>1. 根據任務指示完成所有要求 (例如達到某一級別或建立賬戶)<br>2. 完成程式下載，並試用程式超過一分鐘<br>3. 確認你的裝置沒有於早前曾經下載過有關程式<br>4. 確認沒有於進行任務時轉換過連接無線網絡的IP地址<br>如果確認以上數點但仍未獲得獎賞，請電郵至customer@appsdollar.com 與我們聯絡",
+	"reward-faq-q6": "<span class='icon appsdollar'></span>會過期嗎?",
+	"reward-faq-a6": "如果賬戶於2年內未有登入，則將被視作”非活躍”賬戶，該賬戶內的<span class='icon appsdollar'></span>均會被取消",
+	"reward-faq-q7": "我已經完成所有<span class='icon appsdollar'></span>獎賞內的任務，何時會再加添新任務?",
+	"reward-faq-a7": "一般情況下，我們會每天添加新任務。請不時登入查閱最新任務項目。",
+	"reward-faq-q8": "指定任務要求下載的程式，我已經於早前下載過了。我再下載一次可以賺取<span class='icon appsdollar'></span>嗎?",
+	"reward-faq-a8": "如果裝置已於早前下載過有關程式，則不能以完成有關任務去賺取<span class='icon appsdollar'></span>",
+
+	/* Support - Invite your friends FAQ */
+	"invite-faq-q1": "推薦計劃是什麼?",
+	"invite-faq-a1": "用戶只要成功推薦親友使用<span class='icon appsdollar'></span>，親友賬戶即可獲得10<span class='icon appsdollar'></span>。親友每次賺取的<span class='icon appsdollar'></span>的時候，推薦人賬戶均可獲得10%<span class='icon appsdollar'></span>獎賞。立即按此獲得你的推薦連結及序號",
+	"invite-faq-q2": "如何邀請朋友?",
+	"invite-faq-a2": "於選單點選推薦親友，然後複製你的推薦連結並發送至親友。你亦可邀請親友於登記時輸入你的推薦序號",
+	"invite-faq-q3": "我已經成功推薦親友登記，但未能獲得額外<span class='icon appsdollar'></span>。為什麼?",
+	"invite-faq-a3": "<span class='icon appsdollar'></span>一般會於24小時後直接添加至賬戶內。如果用戶未能獲得有關獎賞，請確保:<br>1. 你的親友已根據任務指示完成所有要求 (例如達到某一級別或完成電郵認證)<br>2. 你的親友已使用你的推薦序號作登記<br>3. 你的親友沒有於早前曾經登記 appsdollar<br>4. 你的親友沒有於進行任務時轉換過連接無線網絡的IP地址<br>如果確認以上數點但仍未獲得獎賞，請電郵至customer@appsdollar.com 與我們聯絡",
+
+	/* Support - About us */
+	"aboutUs-content-1":"appsdollar 是一個讓用戶以各類積分兌換熱門 iOS app、App 內購買項目及實體產品的平台。",
+	"aboutUs-content-2":"- 我們的獎勵計劃，鼓勵用戶發掘熱門 App，並賺取<span class='icon appsdollar'></span>積分",
+	"aboutUs-content-3":"- 用戶可使用<span class='icon appsdollar'></span>或中銀信用卡禮品積分兌換各種產品",
+	"aboutUs-content-4":"商業查詢",
+	"aboutUs-content-5":"如果您有興趣成為我們的合作伙伴，請與我們聯絡：",
+	"aboutUs-content-6":"business@appsdollar.com",
+	"aboutUs-content-7":"客戶服務",
+	"aboutUs-content-8":"如果您對於使用 appsdollar 有任何疑問或意見，請與我們聯絡：",
+	"aboutUs-content-9":"customer@appsdollar.com"
+})

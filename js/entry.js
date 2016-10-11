@@ -11,6 +11,25 @@ requirejs.config({
         
         'interceptor/httpService' 			: '../interceptor',
         
+        'nls/en_US'											: 'translations/en_US',
+		'nls/zh_HK'											: 'translations/zh_HK',
+		'nls/zh_CN'											: 'translations/zh_CN',
+		'nls/support/en_US'							: 'translations/support/en_US',
+		'nls/support/zh_HK'							: 'translations/support/zh_HK',
+		'nls/support/zh_CN'							: 'translations/support/zh_CN',
+		'nls/supportContact/en_US'			: 'translations/supportContact/en_US',
+		'nls/supportContact/zh_HK'			: 'translations/supportContact/zh_HK',
+		'nls/supportContact/zh_CN'			: 'translations/supportContact/zh_CN',
+		'nls/supportTnc/en_US'					: 'translations/supportTnc/en_US',
+		'nls/supportTnc/zh_HK'					: 'translations/supportTnc/zh_HK',
+		'nls/supportTnc/zh_CN'					: 'translations/supportTnc/zh_CN',
+		'nls/supportPrivacy/en_US'			: 'translations/supportPrivacy/en_US',
+		'nls/supportPrivacy/zh_HK'			: 'translations/supportPrivacy/zh_HK',
+		'nls/supportPrivacy/zh_CN'			: 'translations/supportPrivacy/zh_CN',
+		'nls/register/en_US'						: 'translations/register/en_US',
+		'nls/register/zh_HK'						: 'translations/register/zh_HK',
+		'nls/register/zh_CN'						: 'translations/register/zh_CN',
+        
         "config/envConfig":"../config/envConfig"
     },
     shim:{
@@ -33,7 +52,7 @@ requirejs([
     "config/envConfig",
     "interceptor/httpService"
 ],function(app,routes){
-    app.config(["$stateProvider","$urlRouterProvider","$httpProvider",function($stateProvider, $urlRouterProvider,$httpProvider){
+    app.config(["$stateProvider","$urlRouterProvider","$httpProvider",'$translateProvider',function($stateProvider, $urlRouterProvider,$httpProvider,$translateProvider){
         
         
         console.log(routes)
@@ -58,7 +77,50 @@ requirejs([
            // }
         }
         
+        $translateProvider
+            .registerAvailableLanguageKeys(['en_US', 'zh_HK', 'zh_CN'], {
+		    'en': 'en_US',
+		    'en*': 'en_US',
+		    'zh_TW': 'zh_HK',
+		    'zh': 'zh_HK'
+		  })
+        .useLoader('translationLoader')
+        .determinePreferredLanguage()
+        .fallbackLanguage('zh_HK');
+        
+        try{
+			
+				$translateProvider.preferredLanguage('zh_CN');
+			
+		} catch (error){}
+        
     }]);
+    
+    app.factory('translationLoader', function($q, appConstants){
+		var translation_part = [];
+		return function(options){
+			appConstants.lang = options.key;
+			var deferred = $q.defer(),
+					files = ['nls/'+options.key];
+			// get the addix translations
+			if(appConstants.affixTranslation.length > 0){
+				for(var i = 0; i < appConstants.affixTranslation.length; i++){
+					files.push('nls/'+appConstants.affixTranslation[i]+'/'+options.key);
+				}
+			}
+			require(files, function(){
+				var translations = {};
+				for( var i in arguments){
+					angular.extend(translations, arguments[i]);
+				}
+				deferred.resolve(translations);
+			}, function(error){
+				console.log('cannot get the translation, reason(s): ', error);
+				deferred.reject(options.key);
+			})
+			return deferred.promise;
+		}
+	});
     
     app.service('appConstants', function( getSystemInfo, envConfig) {
         var self = this;

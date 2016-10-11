@@ -1,0 +1,78 @@
+define({
+	/* Support */
+	"how-to-redeem": "How do I redeem items?",
+	"appsdollar-faq": "appsdollar FAQ",
+	"reward-faq": "Rewards Program FAQ",
+	"invite-faq": "Invite your friends FAQ",
+	"support-term-and-condition": "Terms and Conditions",
+	"about-us": "About Us",
+	"contact-us": "Contact Us",
+	"tutorial": "Introduction of appsdollar",
+
+	/* Support - How to redeem */
+	"how-to-redeem-q1":"How do I redeem an iOS paid app?",
+	"how-to-redeem-a1":'You can redeem an iOS paid app by heading to the Paid App section and clicking "Add to Cart". Log in with your Facebook / appsdollar account and press "Checkout" inside the Shopping Cart to complete the redemption.',
+	"how-to-redeem-q2":"How do I make an in-app purchase?",
+	"how-to-redeem-a2":'You can make an in-app purchase by selecting the appropiate item and clicking the "Shopping Cart" icon next to it. Log in with your Facebook / appsdollar account and press "Checkout" inside the Shopping Cart to complete the redemption.',
+
+	/* Support - appsdollar FAQ */
+	"appsdollar-faq-q1":"What is appsdollar?",
+	"appsdollar-faq-a1":"appsdollar is a platform that can be used to redeem various apps, in-app purchases and merchandise. Users can pay in multiple ways; through their BOC Credit Card Reward Gift Points or by <span class='icon appsdollar'></span>.<br><span class='icon appsdollar'></span> can be earned through our Rewards program, so all of our products can be purchased without paying a single cent!",
+	"appsdollar-faq-q2":"Why has my transaction failed?",
+	"appsdollar-faq-a2":"You may not have enough points or there has been an error with the processing gateway. Please ensure you have adequate balance and try again. If this error keeps occurring, please e-mail us at customer@appsdollar.com",
+	"appsdollar-faq-q3":"Why can’t I find my favourite iOS paid apps on appsdollar?",
+	"appsdollar-faq-a3":"We are continually adding the most popular iOS paid apps. If you would like to see a certain iOS paid app on appsdollar, please e-mail us at customer@appsdollar.com",
+	"appsdollar-faq-q4":"Why did I receive a message stating the \"app\/ product does not exist anymore\"?",
+	"appsdollar-faq-a4":"The app/ product may have been removed by appsdollar or has been pulled from the iOS App Store.",
+	"appsdollar-faq-q5":"The item says it is \"out of stock\", what should I do?",
+	"appsdollar-faq-a5":"We may run out of stock occasionally and the items may not be available until they have been restocked. Please try again later.",
+	"appsdollar-faq-q6":"What should I do when I could not receive the redemption code after I have successfully completed a transaction?",
+	"appsdollar-faq-a6":"Please check your e-mail for an inbox confirmation message. If could not receive please email details such as your login info and the time / date of the incident to customer@appsdollar.com. ",
+	"appsdollar-faq-q7":"When do redemption codes expire?",
+	"appsdollar-faq-a7":"Most appsdollar redeem codes expire in 30 days. However, specific products may have different expiry dates. These will be clearly stated in the individual product terms and conditions.",
+	"appsdollar-faq-q8":"How long do I need to get the redemption code after a successful transaction?",
+	"appsdollar-faq-a8":"For iOS paid apps, the processing time will be within 20 minutes. For all other products, you should receive the redemption code immediately. Please contact us at customer@appsdollar.com if there are any problems.",
+	"appsdollar-faq-q9":"Can I redeem iOS paid apps anywhere in the world?",
+	"appsdollar-faq-a9":"You can only redeem iOS paid apps from a Hong Kong iTunes account.",
+	"appsdollar-faq-q10":"When I tried redeeming an item, there was a difference in points than previously listed. Why is that?",
+	"appsdollar-faq-a10":"A promotion may have ended or the points required has changed. The points shown on the payment gateway will be the most up to date.",
+	"appsdollar-faq-q11":"When is appsdollar scheduled for maintenance?",
+	"appsdollar-faq-a11":"appsdollar performs daily maintenance at off-peak hours usually starting at 2:30am and ending at 5:30am. ",
+
+	/* Support - Rewards Program FQA */
+	"reward-faq-q1": "What is <span class='icon appsdollar'></span>?",
+	"reward-faq-a1": "<span class='icon appsdollar'></span> is our platform currency used for redeeming various apps, in-app purchases and merchandise. <span class='icon appsdollar'></span> can also be combined with Paypal to redeem items.",
+	"reward-faq-q2": "What is <span class='icon appsdollar'></span> Rewards? How do I earn <span class='icon appsdollar'></span>?",
+	"reward-faq-a2": "<span class='icon appsdollar'></span> Rewards is a place where you can earn <span class='icon appsdollar'></span> for performing simple tasks (such as downloading free apps). Most tasks can be completed with just a few clicks!",
+	"reward-faq-q3": "Do I need to spend money to earn <span class='icon appsdollar'></span>?",
+	"reward-faq-a3": "No, you can earn <span class='icon appsdollar'></span> without spending a single cent.",
+	"reward-faq-q4": "What can I do if have insufficient <span class='icon appsdollar'></span> to redeem an item? ",
+	"reward-faq-a4": "You can use PayPal to pay for any remainder of the transaction. For example, if an item costs 100 <span class='icon appsdollar'></span> and you only have 80 <span class='icon appsdollar'></span> you can use PayPal to pay for the remaining $2.",
+	"reward-faq-q5": "Why haven’t I received credit for my download?",
+	"reward-faq-a5": "Please allow up to 24 hours for the system to credit your account. If you still don’t receive credit, please check the following:<br>1.  You have followed the task instructions completely. For example, you may be required to reach a certain level or register an account<br>2. The app has actually been downloaded and you have tried the app for at least a minute<br>3. You have not downloaded the app previously<br>4. You did not change your I.P or connection to Wi-Fi in the middle of a task<br>If you have checked all these steps, please send us a message and we will try our best to help out!",
+	"reward-faq-q6": "Does my <span class='icon appsdollar'></span> expire?",
+	"reward-faq-a6": "If you haven’t logged in at least once in 2 years, our system will classify your account as “inactive” and all <span class='icon appsdollar'></span> will be erased. Be sure to login once in awhile to keep your account active",
+	"reward-faq-q7": "I’ve completed all the offers already, when will there be new ones?",
+	"reward-faq-a7": "Rest assured, we try our best to add new offers daily. Please check back once in awhile and complete more tasks! ",
+	"reward-faq-q8": "What if I already have an offered app installed?",
+	"reward-faq-a8": "Unfortunately, if you have previously installed the app or already have the app installed, you won’t be able to get <span class='icon appsdollar'></span> for it",
+
+	/* Support - Invite your friends FAQ */
+	"invite-faq-q1": "What is the referral program?",
+	"invite-faq-a1": "When you refer someone, you get 10% of all <span class='icon appsdollar'></span> they earn. Your friend will also receive a bonus 10 points to start! Click here to see your referral link / code",
+	"invite-faq-q2": "How do I invite a friend?",
+	"invite-faq-a2": "Go to Menu → Invite Friends. Copy the invite link and send it to your friends. Alternatively, you could have your friend enter your referral code during registration",
+	"invite-faq-q3": "I didn’t receive any <span class='icon appsdollar'></span> for referring my friend?",
+	"invite-faq-a3": "Please allow up to 24 hours for the system to credit your account. If you still don’t receive credit, please check the following:<br>1. Your friend has actually completed an offer.<br>2. Your friend used your referral code/ referral link to join appsdollar. If your friend visited appsdollar by themselves, we would have no way to know it was from you and credit your account.<br>3. Your friend has not previously joined appsdollar<br>4. Your friend did not change their I.P or connected to Wi-Fi in the middle of a task<br>If you have checked all these steps, please send us a message and we will try our best to help out!",
+
+	/* Support - About us */
+	"aboutUs-content-1":"appsdollar is a platform for users to redeem iOS apps, in-app purchases and merchandise with their loyalty points.",
+	"aboutUs-content-2":"- Our rewards program allows users to discover free apps and earn <span class='icon appsdollar'></span> points",
+	"aboutUs-content-3":"- Users can spend their <span class='icon appsdollar'></span> or BOC Credit Card Gift points to redeem various gifts",
+	"aboutUs-content-4":"Business Enquiries",
+	"aboutUs-content-5":"If you would like to learn more about appsdollar and how you can become a partner please contact us at the e-mail below:",
+	"aboutUs-content-6":"business@appsdollar.com",
+	"aboutUs-content-7":"Customer Service",
+	"aboutUs-content-8":"For any enquiries or comments about your appsdollar experience, please contact us at the email below:",
+	"aboutUs-content-9":"customer@appsdollar.com"
+});
