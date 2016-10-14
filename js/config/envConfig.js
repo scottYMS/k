@@ -4,6 +4,6 @@ define(['app'], function(app){
 		'secureDomain'	: '',
 		'fbShareAPI'		: '',
 		'fbAppId'				: '',
-		'debug'					: ''
+		'debug'					: true
 	});
 });
