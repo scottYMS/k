@@ -1,0 +1,17 @@
+<div class="selectList">
+	<div class="heading block-container color-c6">
+		<span>{{title | translate}}</span>
+		<span class="icon appClose" ng-click="cancel()"></span>
+	</div>
+	<div class="content block-container color-c4">
+		<ul class=" no-padding">
+			<li ng-repeat="option in options" ng-click="selectOption($index)">
+				<span class="icon {{option.icon}}" ng-show="!!(option.icon)"></span>
+				<span class="option" ng-show="!option.key" ng-class="{withIcon: !!(option.icon)}"><div>{{option.title}}</div></span>
+				<span class="option" ng-show="option.key" ng-class="{withIcon: !!(option.icon)}"><div>{{option.title | translate}}</div></span>
+				<span class="icon appTick color-c1" ng-if="option.id == selectedOption.id"></span>
+				<hr ng-if="!$last">
+			</li>
+		</ul>
+	</div>
+</div>

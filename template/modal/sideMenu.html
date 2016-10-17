@@ -1,0 +1,90 @@
+<!-- *** Start Side Menu *** -->
+<div class="color-c5">
+	<div class="side-menu-upper block-container">
+
+		<!-- Side Menu Search -->
+		<form ng-submit="search(); hideMenu($event);">
+			<div class="input-form">
+				<input type="search" ng-model="searchInput" autocomplete="on" placeholder="{{'search-placeholder' | translate}}">
+				<span class="icon search color-c4" ng-click="search($event);" ></span>
+   	 </div>
+    </form>
+		<!-- End of Side Menu Search -->
+
+		<!-- Post Login UI -->
+		<div class="profile" ng-if="postLogin">
+			<div class="left">
+				<img src="img/profile_icon.png" class="img-circle" ui-sref="profile" ng-click="hideMenu($event);" ng-if="!profileImg">
+				<img ng-src="{{profileImg}}" class="img-circle" ui-sref="profile" ng-click="hideMenu($event);" ng-if="profileImg">
+			</div>
+			<div class="right">
+				<div>{{userName}}</div>
+				<!-- <div>Currency</div> -->
+			</div>
+		</div>
+		<div ng-if="postLogin" style="margin: 1.5em 0" class="text-center">
+			<button class="btn appsdollar-btn appsdollar-btn-white" ng-click="logout()">{{'logout' | translate}}</button>
+		</div>
+		<!-- End of Post Login UI -->
+
+		<!-- Pre Login UI -->
+		<div ng-if="!postLogin" class="side-menu-btn-group">
+			<button class="btn appsdollar-btn-side-menu appsdollar-btn-white" ng-click="hideMenu($event)" ui-sref="register">{{'signup' | translate}}</button>
+			<button class="btn appsdollar-btn-side-menu appsdollar-btn-green" ng-click="hideMenu($event)" ui-sref="login">{{'login' | translate}}</button>
+		</div>
+
+	<!-- End of Pre Login UI -->
+
+		<hr>
+	</div>
+
+	<div class="side-menu-lower">
+		<!-- Side Menu List -->
+		<ul class="side-menu-list" >
+			<li ui-sref="home" ng-click="hideMenu($event);">
+				{{'home' | translate}}
+			</li>
+			<li ui-sref="rewardProgram" ng-click="hideMenu($event);">
+				{{'reward-program'| translate}}
+			</li>
+			<li>
+				<div ng-click="isCollapsed = !isCollapsed" ng-init="isCollapsed = true">
+					<span>{{'redeem'| translate}}</span>
+					<span class="side-menu-arrow color-c3" ng-class="{'icon appArrowBottomBold': !isCollapsed, 'icon appArrowRightBold': isCollapsed}"></span>
+				</div>
+
+				<ul class="side-menu-sublist color-c3"uib-collapse="isCollapsed">
+					<li ng-repeat="contentType in contentTypes" ui-sref="{{contentType.link}}" ng-click="storeContentType(contentType.contentType); hideMenu($event);">
+						{{contentType.contentTypeName}}
+					</li>
+				</ul>
+			</li>
+			<li ui-sref="inbox" ng-click="hideMenu($event);" ng-if="postLogin" ng-class="{collapseAbove: !isCollapsed && postLogin}">
+				{{'inbox'| translate}}
+			</li>
+			<!-- <li ui-sref="newsList" ng-click="hideMenu($event);" ng-class="{collapseAbove: !isCollapsed && !postLogin}">
+				{{'news'| translate}}
+			</li> -->
+			<li ui-sref="inviteFriend" ng-if="postLogin" ng-click="hideMenu($event);">
+        {{'invite-fd' | translate}}
+      </li>
+			<li ui-sref="cart" ng-click="hideMenu($event);">
+				{{'my-cart'| translate}}
+			</li>
+			<li ui-sref="profile" ng-click="hideMenu($event);" ng-if="postLogin">
+				<span>{{'profile'| translate}}</span>
+			</li>
+			<li ui-sref="support" ng-click="hideMenu($event);">
+				<span>{{'support'| translate}}</span>
+			</li>
+
+			<div class="side-menu-lang color-c3">
+				<span ng-click=changeLanguage('zh_HK') ng-class="{'color-c1': lang == 'zh_HK'}">繁</span> |
+				<span ng-click=changeLanguage('zh_CN') ng-class="{'color-c1': lang == 'zh_CN'}">简</span> |
+				<span ng-click=changeLanguage('en_US') ng-class="{'color-c1': lang == 'en_US'}">EN</span>
+			</div>
+		</ul>
+		<!-- End of Side Menu List -->
+	</div>
+</div>
+<!-- *** END Side Menu ***  -->

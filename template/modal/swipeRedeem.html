@@ -1,0 +1,19 @@
+<div class="text-center block-container swipe-redeem">
+    <div class="modal-popup-header">
+    	<span class="icon appClose" ng-click="cancel()" ng-show="isRedeem"></span>
+    	<div class="appsdollar-font color-c1" ng-show="!isRedeem">{{'swipe-redeem-msg1' | translate}}</div>
+    	<div class="appsdollar-font color-c1" ng-show="isRedeem">{{'swipe-redeem-msg2' | translate}}</div>
+    </div>
+    <div class="modal-popup-body">
+    <div ng-show="isRedeem">
+    	<img src="img/swipe_icon.png">
+    </div>
+    </div>
+    <div class="modal-popup-footer">
+        <button class="btn appsdollar-btn appsdollar-btn-green" type="button" ng-click="cancel()" ng-show="!isRedeem">{{'cancel' | translate}}</button>
+        <button class="btn appsdollar-btn appsdollar-btn-green" type="button" ng-click="flip()" ng-show="!isRedeem">{{'ok' | translate}}</button>
+        <div class="unlock-slider" ng-show="isRedeem">
+        	<div class="unlock-handle" id="handle"></div>
+        </div>
+    </div>
+</div>

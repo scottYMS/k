@@ -1,0 +1,16 @@
+<div class="modal-popup-header modal-popup-header-fixed">
+	<span class="icon appClose" ng-click="cancel()"></span>
+	<img ng-src="{{message.icon}}" class="img-rounded">
+	<div class="points">{{'earn' | translate}} <span class="icon appsdollar">{{message.points}}</span></div>
+</div>
+<div class="text-center block-container reward-popup scrollable">
+  <div class="modal-popup-body">
+  	<div translate="instruction1" ng-if="!message.content"></div>
+  	<div translate="instruction2" ng-if="!message.content"></div>
+  	<div ng-bind-html="message.content" ng-if="message.content"></div>
+  </div>
+</div>
+<div class="modal-popup-footer modal-popup-footer-fixed">
+  <!-- <a class="btn appsdollar-btn appsdollar-btn-green" ng-href="{{message.url}}" target="_blank" ng-click="ok(); $event.stopPropagation();">{{'ok' | translate}}</a> -->
+  <a dismiss-reward-popup="ok()" ng-href="{{message.url}}" target="_blank"><button class="btn appsdollar-btn appsdollar-btn-green">{{'download' | translate}}</button></a>
+</div>
